@@ -3,6 +3,7 @@ public class HomeworkApp {
         System.out.println(checkSum(1,1));
         checkSign(-1);
         System.out.println(isNegative(-2));
+        printRepeated("Hello",2);
     }
     private static boolean checkSum(int a,int b)
     {
@@ -18,5 +19,10 @@ public class HomeworkApp {
     private static boolean isNegative(int a)
     {
         return a<0;
+    }
+    private static void printRepeated(String s , int n)
+    {
+        for (int i = 0;i<n;++i)
+            System.out.println(s);
     }
 }
