@@ -1,9 +1,10 @@
 public class HomeworkApp {
     public static void main(String[] args) {
-        System.out.println(checkSum(1,1));
-        checkSign(-1);
-        System.out.println(isNegative(-2));
-        printRepeated("Hello",2);
+        System.out.println(checkSum(1,1)); // Task1
+        checkSign(-1); //Task2
+        System.out.println(isNegative(-2));//Task3
+        printRepeated("Hello",2); // Task4
+        System.out.println(isIntercalary(2000)); //Task5
     }
     private static boolean checkSum(int a,int b)
     {
@@ -24,5 +25,8 @@ public class HomeworkApp {
     {
         for (int i = 0;i<n;++i)
             System.out.println(s);
+    }
+    private static boolean isIntercalary(int a){
+        return (a%4==0 && a%100!=0) || (a%400==0);
     }
 }
